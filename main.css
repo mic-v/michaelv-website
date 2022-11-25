@@ -1,0 +1,113 @@
+/* import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"; */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+
+ Our CSS
+
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+:root {
+    --neon-text-color: #f40;
+    --neon-border-color: #08f;
+}
+
+html, body {
+    height: 100%;
+}
+
+body {
+    background-color: #060b13;
+}
+
+.nav-bar {
+    display: flex;
+    
+}
+
+.logo {
+    text-align: center;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em 1em;
+}
+
+.logo b {
+    font-family: 'Righteous';
+    font-size: 5vh;
+    color: rgba(215, 246, 250, 0.952);
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #1a317c, 0 0 0.5em #346c7e, 0 0 0.1em #41ccdf, 0 10px 3px #000;
+}
+
+.logo-border {
+    border: 0.2em solid rgb(27, 90, 207);
+    border-radius: 1em;
+    width: 250px;
+}
+
+h1 {
+    color: white;
+    width: 50%;
+}
+
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    color: white;
+}
+
+
+
+
+
