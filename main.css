@@ -107,6 +107,28 @@ h1 {
     color: white;
 }
 
+.hero-banner {
+    height: 100%;
+    background-color: black;
+    margin: 20px;
+}
+
+.hero-border {
+    border:5px rgba(215, 246, 250, 0.952) solid;
+    border-radius: 20px;
+    height: 90%;
+    width: 90%;
+    margin: 0 auto;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-border > a {
+    color: white;
+}
+
 
 
 
