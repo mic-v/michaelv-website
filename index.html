@@ -19,9 +19,9 @@
         <div class="logo">michael<strong>v.</strong></div>
         <div class="navigation">
           <ul class="navigation-list">
-            <li>About Me</li>
-            <li>Works</li>
-            <li>Resume</li>
+            <li onclick="show('about-me')">About Me</li>
+            <li onclick="show('works')">Works</li>
+            <li onclick="show('resume')">Resume</li>
           </ul>
           <div class="menuicon">
             <div class="bar1"></div>
@@ -31,27 +31,32 @@
         </div>
       </div>
     </nav>
-    <section class="hero-banner">
-      <section id="intro-banner" class="container">
-        <div class="intro-info">
-          <!--<div id="intro-image"></div> -->
-          <img id="intro-image" src="images/PersonalSprite.png">
-          <hr>
-          <ul id="social-media">
-            <li>A</li>
-            <li>A</li>
-            <li>A</li>
-          </ul>
-        </div>
-        <span id="intro-text">
-          <span>        Hello! I am Michael Victorino. Just a developer interested in web development and 
-            game development.</span>
-          
-            <span>Check out my GitHub and LinkedIn</span>
-          
-            <span>For business inqueries, you can email me!</span>
-        </span>
+    <section id="about-me" class="page visible">
+      <section class="hero-banner">
+        <section id="intro-banner" class="container">
+          <div class="intro-info">
+            <!--<div id="intro-image"></div> -->
+            <img id="intro-image" src="images/PersonalSprite.png">
+            <hr>
+            <ul id="social-media">
+              <li><a href=""></a>A</li>
+              <li>A</li>
+              <li>A</li>
+            </ul>
+          </div>
+          <span id="intro-text">
+            <span>        Hello! I am Michael Victorino. Just a developer interested in web development and 
+              game development.</span>
+            
+              <span>Check out my GitHub and LinkedIn</span>
+            
+              <span>For business inqueries, you can email me!</span>
+          </span>
+        </section>
       </section>
+    </section>
+    <section id="works" class="page hidden">
+      <span>asdf</span>
     </section>
     <footer class="footer">
       <span>Copyright &#169 2022 Michael Victorino. All Rights Reserved</span>

@@ -110,13 +110,19 @@ html, body {
 .navigation-list-on {
 	height: 100px;
 	opacity: 1;
-	transition: 0.1 ease-in-out;
 }
 
 .navigation-list > li {
 	margin: 2em 0.5em;
 
 	font-family: 'Roboto Mono', monospace;
+	cursor:pointer;
+}
+
+
+.navigation-list a, .navigation-list a:link, .navigation-list a:visited {
+	text-decoration: none;
+	color:black;
 }
 
 
@@ -136,13 +142,29 @@ strong {
 	color: #08f;
 }
 
-.hero-banner {
+.page {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 
-	height: 80%;
+	height: 80vh;
+	opacity: 1;
+	transition: 0.5s;
 }
+
+.visible {
+	visibility: visible;
+	opacity: 1;
+	height: 80vh;
+
+}
+
+.hidden {
+	visibility: hidden;
+	opacity: 0;
+	height: 0vh;
+}
+
 
 #intro-banner {
 	display: flex;
@@ -159,10 +181,6 @@ strong {
 .intro-info {
 	height: 100%;
 	margin: 0 auto;
-}
-
-.intro-logo {
-	
 }
 
 #intro-image {
@@ -184,7 +202,7 @@ strong {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	margin: 2em 1em;
+	margin: 1em 1em;
 }
 
 #intro-text > span {
@@ -224,13 +242,14 @@ strong {
 		justify-content: center;
 		align-items: center;
 		flex-direction: row;
+		opacity: 100;
 	}
 
 	.navigation-list > li {
 		margin: 0em 0.5em;
 	}	
 
-	.menu-icon {
+	.menuicon {
 		opacity: 0;
 		width: 0px;
 	}
