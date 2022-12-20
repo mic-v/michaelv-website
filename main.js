@@ -38,7 +38,7 @@ function show(elementID) {
 
     if(!windowX.matches) {
         const navlist = document.querySelector('.navigation-list');
-        let opacity = navlist .style.opacity;
+        let opacity = navlist.style.opacity;
         console.log("opacity: " + opacity);
         if(opacity === "1") {
             navlist .style.opacity = 0;
@@ -50,3 +50,39 @@ function show(elementID) {
 
     }
 }
+
+
+function showNavbar(x) {
+    console.log("yoplo");
+    if(x.matches) {
+        const navlist = document.querySelector('.navigation-list');
+        let opacity = navlist.style.opacity;
+        if(opacity === '0') {
+            navlist .style.opacity = 1;
+            navlist .style.height = "100%";
+        }
+    }
+}
+
+function checkNavbar() {
+    if(window.matchMedia("(min-width: 700px").matches) {
+        const navlist = document.querySelector('.navigation-list');
+        let opacity = navlist.style.opacity;
+        if(opacity === '0') {
+            navlist .style.opacity = 1;
+            navlist .style.height = "100%";
+        } 
+    } else {
+        const navlist = document.querySelector('.navigation-list');
+        let opacity = navlist.style.opacity;
+        if(opacity === '1') {
+            navlist .style.opacity = 0;
+            navlist .style.height = "0";
+        } 
+    }
+}
+
+window.addEventListener("resize", checkNavbar);
+
+
+
